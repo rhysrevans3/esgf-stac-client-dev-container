@@ -1,22 +1,14 @@
-from setuptools import setup, find_packages
-from os.path import basename, splitext
-from glob import glob
+from setuptools import setup
 
 setup(
-    name="esgf-stac-client",
+    name="esgf-stac-client-dev-container",
     version="0.0",
     description=(
-        "A Python client to access ESGF STAC data"
+        "A docker dev container for esgf-stac-client"
     ),
-    author="Mahir Rahman",
-    author_email="kazi.mahir@stfc.ac.uk",
-    url="https://github.com/cedadev/esgf-stac-client",
-    packages=find_packages(exclude=("tests",)),
-    py_modules=[splitext(basename(path))[0] for path in glob("pystac_client/*py")],
+    author="Rhys Evans",
+    author_email="rhys.r.evans@stfc.ac.uk",
+    url="https://github.com/cedadev/esgf-stac-client-dev-container",
     python_requires=">=3.8",
-    dependency_links=[
-        "https://github.com/cedadev/pystac.git@asset-search",
-        "https://github.com/cedadev/pystac-client.git@asset-search",
-    ],
     license="BSD 2-Clause License",
 )

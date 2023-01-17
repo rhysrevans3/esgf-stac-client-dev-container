@@ -1,2 +1,0 @@
-git+https://github.com/cedadev/pystac.git@asset-search
-git+https://github.com/cedadev/pystac-client.git@asset-search
